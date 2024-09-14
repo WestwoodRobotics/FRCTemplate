@@ -2,10 +2,6 @@
     "name": "WPILib",
     "remoteUser": "vscode",
     "postCreateCommand": "bash -i /workspaces/FRCTemplate/.devcontainer/post_create.sh",
-    "build": {
-        "dockerfile": "./Dockerfile",
-        "context": "."
-    },
     "overrideCommand": false,
     "privileged": true,
     "mounts": [
