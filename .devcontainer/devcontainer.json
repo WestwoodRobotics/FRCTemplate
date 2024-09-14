@@ -37,7 +37,8 @@
         "ghcr.io/devcontainers/features/git:1": {
             "version": "latest",
             "ppa": "false"
-        }
+        },
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
     },
     "hostRequirements": {
         "memory": "9gb"
