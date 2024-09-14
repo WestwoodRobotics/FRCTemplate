@@ -23,7 +23,8 @@
                 "GitHub.vscode-pull-request-github",
                 "ms-vscode.vscode-selfhost-test-provider",
                 "mutantdino.resourcemonitor",
-                "github.copilot-chat"
+                "github.copilot-chat",
+                "pkief.material-icon-theme"
             ]
         }
     },
