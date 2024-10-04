@@ -8,9 +8,14 @@ jobs:
     container: wpilib/roborio-cross-ubuntu:2024-22.04
     steps:
 
+      - name: Ensure Gradle wrapper files exist
+        run: |
+          curl -L https://services.gradle.org/distributions/gradle-8.5-bin.zip -o gradle.zip && unzip gradle.zip && rm gradle.zip && gradle-8.5/bin/gradle wrapper --gradle-version latest --distribution-type all
+      
       - uses: actions/checkout@v4
       - name: Grant execute permission # just in case
         run: chmod +x gradlew
+        
 
       - name: Regenerate Gradle Wrapper
         run: ./gradlew wrapper
