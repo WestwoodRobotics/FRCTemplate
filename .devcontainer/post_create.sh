@@ -1,4 +1,4 @@
-#!/bin/sh
+plaon#!/bin/sh
 
 
 echo "Post-create script starting..."
