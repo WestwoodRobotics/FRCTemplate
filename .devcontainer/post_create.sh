@@ -21,6 +21,10 @@ else
     sudo echo "openjdk-21-jre is already installed"
 fi
 
+curl -L https://services.gradle.org/distributions/gradle-8.5-bin.zip -o gradle.zip && unzip gradle.zip && rm gradle.zip && gradle-8.5/bin/gradle wrapper --gradle-version latest --distribution-type all
+chmod +x gradlew
+./gradlew wrapper
+
 # Extract year and version from the URL
 URL="https://packages.wpilib.workers.dev/installer/v2024.3.2/Linux/WPILib_Linux-2024.3.2.tar.gz"
 VERSION=$(echo $URL | grep -oP 'v\K[0-9]{4}\.[0-9]+\.[0-9]+')
